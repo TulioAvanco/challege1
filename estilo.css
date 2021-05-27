@@ -223,6 +223,13 @@
     flex-wrap: wrap;
 }
 
+.container02imagem{
+    width: 50%;
+}
+
+.carousel{
+    width: 50%;}
+
 .container03{
     display: flex;
     flex-direction: column;
@@ -232,6 +239,8 @@
 
 .gridfooter{
     display: flex;
+    justify-content: center;
+    text-align: center;
     justify-content: space-around;
     flex-direction: row;
     position: relative;
@@ -264,17 +273,38 @@
 
 }
 
+@media (max-width:960px){
+ .card-group{
+    flex-direction: column;
+    flex-wrap: wrap ;
 
-@media (max-width:991px){
-
-    .nav {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-    }
+    
+}
 
 
+.div-grid-icons{
+    flex-direction: column;
+    flex-wrap: wrap ;}
+}
+
+@media (max-width:600px){
+.container02{
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 }
+
+.container02imagem{
+    width: 100%;
+}
+
+.carousel{
+    width: 100%;}  
+    
+  .gridfooter{
+      flex-direction: column;
+  }  
+}
+
